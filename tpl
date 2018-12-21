@@ -147,7 +147,7 @@ ServerActive=46.101.100.200
 # Default:
 # Hostname=
 
-Hostname=$1
+Hostname=${HOSTNAME}
 
 ### Option: HostnameItem
 #	Item used for generating Hostname if it is undefined. Ignored if Hostname is defined.
@@ -388,11 +388,11 @@ TLSAccept=psk
 #
 # Mandatory: no
 # Default:
-TLSPSKIdentity=$2
+TLSPSKIdentity=${IDENT}
 
 ### Option: TLSPSKFile
 #	Full pathname of a file containing the pre-shared key.
 #
 # Mandatory: no
 # Default:
-TLSPSKFile=$3
+TLSPSKFile=${FILE}
