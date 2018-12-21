@@ -1,0 +1,10 @@
+PidFile=/var/run/zabbix/zabbix_agentd.pid
+LogFile=/var/log/zabbix/zabbix_agentd.log
+LogFileSize=0
+Server=46.101.100.200
+ServerActive=46.101.100.200
+Hostname=${HOSTNAME}
+TLSConnect=psk
+TLSAccept=psk
+TLSPSKIdentity=${IDENT}
+TLSPSKFile=${FILE}
